@@ -60,7 +60,9 @@
 /*-------------------------------------------------------------------
     @footer
 -------------------------------------------------------------------*/
-#footer{}
+#footer {background-color: #2d2f2e; padding-top: 5.5rem; padding-bottom: 6.5rem;}
+#footer .quick {position: fixed; right 3rem; top: 21.5rem; background-color: #ffffff; width: 8rem; border-radius: 4rem; padding: 2.5rem 1rem;}
+#footer .quick ul {display: flex; flex-direction: colunm; gap: 3rem 0; align-items: center; box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0, 0.7);}
 
 .link{}
 
