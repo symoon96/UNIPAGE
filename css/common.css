@@ -65,7 +65,7 @@
 #footer .quick ul {display: flex; flex-direction: column; gap: 3rem 0; align-items: center; }
 #footer .quick ul li a {display: block;}
 #footer .quick ul li img {width: 4rem;}
-#footer .quick ul li p {font-size: 1.4rem; line-height: 1.143; color: #777777; text-align: center;}
+#footer .quick ul li p {font-size: 1.4rem; line-height: 1.143; color: #777777; text-align: center; margin-top: 1rem}
 
 .link{}
 
