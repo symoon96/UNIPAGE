@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    파일정의 : 레이아웃
+-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------
+    @공통
+-------------------------------------------------------------------*/
+#skip-nav {height:0}
+#skip-nav a {display: block; position: absolute; left: 0; top: -100px; width: 100%; height: 1px; text-align: center}
+#skip-nav a:focus, #skip a:active {position: absolute; top: 0; z-index: 120; height: 25px; padding: 10px 0; font-size: 1.4em; font-weight: 700; color: #36348f; background: #fff;}
+
+/*-------------------------------------------------------------------
+    @header
+-------------------------------------------------------------------*/
+#header {min-height: 10rem;}
+#header .inner {position: fixed; width: 100vw; height: 10rem; background-color: #ffffff; z-index: 2; box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.07);}
+#header .inner .container {display: flex; align-items: center;}
+#header.on {}
+
+.logo {width: 15rem; height: 7.7rem; background: url('../img/common/logo.png') no-repeat center; background-size: 100%;}
+.logo a { display: block; width: 100%; height: 100%; text-indent: -9999px; }
+
+.gnb {display: flex; justify-content: space-between; align-items: center; margin-left: 14rem; flex: 1 0;}
+.gnb .util {order: 1;}
+.gnb .util ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 1rem;}
+.gnb .util ul li:first-child {margin-right: 1rem;}
+.gnb .user,
+.gnb .quick {display: none;}
+
+.gnb .depth01 > ul {display: flex; align-items: center; justify-content: flex-start;}
+.gnb .depth01 > ul > li {width: 14rem; position: relative;}
+.gnb .depth01 > ul > li > a {text-align: center; display: block; line-height: 10rem; font-size: 1.8rem; color: #212121; position: relative;}
+.gnb .depth01 > ul > li > a::after {content: ""; width: 0; height: 0.3rem; background: #CB0010; position: absolute; left: 0; bottom: 0; transition: all 0.3s;}
+
+.gnb .depth02 {position: absolute; width: 14rem; top: 100%; left: 0; background-color: #ffffff; display: none;}
+.gnb .depth02 .tit-depth {display: none;}
+
+.gnb .depth01 > ul > li.hover > a {color: #CB0010; font-weight: 700;}
+.gnb .depth01 > ul > li.hover > a::after {width: 100%;}
+
+.gnb .depth01 > ul > li.hover > .depth02 {display: block;}
+.gnb .depth01 > ul > li.hover > .depth02 > ul { border-bottom-left-radius: 0.5rem; border-bottom-right-radius: 0.5rem; box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1); padding: 1rem 0;}
+.gnb .depth01 > ul > li.hover > .depth02 > ul > li > a {display: block; text-align: center; color: #212121; letter-spacing: -0.02em; font-size: 1.6rem; line-height: 2.5; transition: all 0.3s;}
+
+.gnb-m{}
+
+.etc {}
+
+.shortcut {}
+
+.util {}
+
+.support {}
+
+.assistant {}
+
+.branding {}
+ 
+/*-------------------------------------------------------------------
+    @footer
+-------------------------------------------------------------------*/
+#footer{}
+
+.link{}
+
+.family{}
+
+.sns{}
+
+.address{}
+
+.logo-f{}
+
+.copyright{}
+
+.fnb {}
+ 
+/*-------------------------------------------------------------------
+    @content
+-------------------------------------------------------------------*/
+#content{}
+
+.container {margin-left: auto; margin-right: auto; position: relative; padding-left: 4rem; padding-right: 4rem; max-width: 148rem;}
+.container::after{ display: block; clear: both; content: ""; }
+
+.has-padding{}
+
+/*-------------------------------------------------------------------
+    @floating
+-------------------------------------------------------------------*/
+ 
+/*-------------------------------------------------------------------
+    @popup
+-------------------------------------------------------------------*/
+.popup{}
+
+.popup .pop-head{}
+
+.popup .pop-cont{}
+
+.popup .pop-footer{}
+
+@media (hover: hover) {
+    /*-------------------------------------------------------------------
+        @header
+    -------------------------------------------------------------------*/
+    .gnb .depth01 > ul > li.hover > .depth02 > ul > li:hover > a {color: #CB0010}
+}

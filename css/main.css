@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    파일정의 : 메인 스타일
+-------------------------------------------------------------------*/
+/* 공통 */
+.main{}
+
+.main [class^='secction'] .headline-area .title01 {font-size: 1.8rem; line-height: 1.667;}
+.main [class^='secction'] .headline-area .title01 + .title02 {margin-top: 0.5rem;}
+.main [class^='secction'] .headline-area .title02 {font-size: 4rem; line-height: 1.2; font-weight: 800;}
+.main [class^='secction'] .headline-area .title02 + .title01 {margin-top: 1rem;}
+
+/* 섹션 */
+.main .visual {position: relative}
+.main .visual .swiper-wrapper .swiper-slide {background-image: url('../img/main/bg_visual.png'); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.main .visual .swiper-wrapper .swiper-slide .container {display: flex; align-items: center; justify-content: flex-start; height: 70rem;}
+.main .visual .swiper-wrapper .swiper-slide .text-area {flex: 1 0;}
+.main .visual .swiper-wrapper .swiper-slide .text-area .category {width: fit-content; line-height: 3.5rem; color: #ffffff; padding: 0 1.5rem; border-radius: 1.8rem; font-size: 1.6rem;}
+.main .visual .swiper-wrapper .swiper-slide .text-area .title {margin-top: 0.5rem; font-size: 5rem; font-weight: 700; line-height: 1.2;}
+.main .visual .swiper-wrapper .swiper-slide .text-area .text {margin-top: 1rem; font-size: 1.6rem; line-height: 1.5;}
+.main .visual .swiper-wrapper .swiper-slide .text-area .text strong {font-weight: 700;}
+.main .visual .swiper-wrapper .swiper-slide .text-area .btn {margin-top: 5rem; transition: all 0.3s;}
+.main .visual .swiper-wrapper .swiper-slide .img-area {flex: none; width: 79.6rem;}
+.main .visual .swiper-wrapper .swiper-slide .img-area img {margin: -0.8rem 0 -2rem 1.8rem; width: 82.4rem;}
+.main .visual .controller {position: absolute; display: flex; align-items: center; justify-content: flex-start; bottom: 22.4rem; z-index: 1; left: 50%; transform: translateX(-50%); margin-left: -50rem; gap: 0 1rem;}
+
+.main .service {padding-top: 13rem; padding-bottom: 7rem;}
+.main .service .service-list {border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; margin-top: 3rem;}
+.main .service .service-list ul {display: flex;}
+.main .service .service-list ul li {flex: 1 0; padding-top: 6.5rem; padding-bottom: 6.5rem;}
+.main .service .service-list ul li + li {border-left: 1px solid #CCCCCC; margin-left: 3.5rem; padding-left: 3.5rem;}
+.main .service .service-list ul li a {display: block;}
+.main .service .service-list ul li .text {font-size: 1.6rem; color: #545454; line-height: 1.25;}
+.main .service .service-list ul li .title {margin-top: 0.5rem; font-weight: 700; color: #212121; font-size: 2.5rem; line-height: 1.2; width: fit-content; padding-right: 4.8rem; transition: all 0.3s; position: relative;}
+.main .service .service-list ul li .title::after {content: ""; width: 2.8rem; height: 0.9rem; position: absolute; background: url('../img/main/bg_service_hover.png') no-repeat center; background-size: 100%; right: 4.8rem; top: 50%; transform: translateY(-50%); opacity: 0; transition: all 0.3s}
+.main .service .service-list ul li .img-area {width: 100%; margin-top: 10rem; padding-top: 60%; overflow: hidden; height: 0; position: relative; border-radius: 0.5rem;}
+.main .service .service-list ul li .img-area img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) scale(1); object-fit: cover; transition: all 0.3s}
+
+.main .keyword {padding-top: 7rem; padding-bottom: 16rem;}
+.main .keyword .headline-area {text-align: center;}
+.main .keyword .keyword-list {width: 79rem; margin: 5rem auto 0;}
+.main .keyword .keyword-list ul {display: flex; flex-wrap: wrap; gap: 1.5rem 1rem;}
+.main .keyword .keyword-list ul li {width: calc(25% - 0.75rem)}
+.main .keyword .keyword-list ul li a {display: block; text-align: center; border: 1px solid #E0E0E0; font-size: 1.6rem; color: #545454; border-radius: 2.8rem; line-height: 5.3rem; transition: all 0.3s}
+.main .keyword .search {margin: 5rem auto 0; max-width: 79rem; display: flex; align-items: center; gap: 0 1rem;}
+.main .keyword .search input[type="text"] {flex: 1 0;}
+.main .keyword .search .btn {width: 21rem;}
+
+.main .recommend {padding: 15rem 0; background-color: #FAFAFA;}
+.main .recommend .recommend-swiper {margin-top: 5rem; padding-bottom: 8rem;}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .img-area {border: 1px solid #E7E7E7; border-radius: 1rem; overflow: hidden; transition: all 0.3s}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .img-area img {transition: all 0.3s}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide.best .img-area::before {content: "BEST"; width: 7rem; height: 2.5rem; line-height: 2.5rem; color: #ffffff; border-radius: 1.3rem; position: absolute; z-index: 1; background-color: #cb0010; left: 1rem; top: 1rem; text-align: center; line-height: 2.5rem; font-size: 1.3rem; font-weight: 700;}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area {margin-top: 2rem; }
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area {position: relative;}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .title {font-size: 2.5rem; font-weight: 700; line-height: 1.2; color: #212121}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .category {margin-top: 1rem; font-size: 1.6rem; color: #9A9A9A; line-height: 1.25;}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price {margin-top: 2.5rem;}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price dl {display: flex; justify-content: flex-start; align-items: center; font-size: 1.6rem; color: #666666;}
+.main .recommend .recommend-swiper .swiper-pagination {bottom: 0; height: 1rem; display: flex; align-items: center; justify-content: center; gap: 0 2rem;}
+.main .recommend .recommend-swiper .swiper-pagination .swiper-pagination-bullet {width: 1rem; height: 1rem; border-radius: 50%; margin: 0; opacity: 1; background-color: #CCCCCC;}
+.main .recommend .recommend-swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {background-color: #CB0010;}
+
+.main .template {padding-top: 15rem; padding-bottom: 7.5rem;}
+.main .template .gallery-wrap {margin-top: 5rem;}
+.main .template .btn-more {margin: 10rem auto 0;}
+
+.main .reason {padding-top: 7.5rem; padding-bottom: 15rem;}
+.main .reason .headline-area {text-align: center;}
+.main .reason .reason-area {margin-top: 5rem; display: flex; gap: 0 3rem;}
+.main .reason .reason-area a {flex: 1 0; border: 1px solid #CCCCCC; border-radius: 2rem; display: flex; flex-direction: column; justify-content: space-between; height: 40rem; padding: 5.5rem 6rem 6.5rem; background-color: #FAFAFA; background-repeat: no-repeat; background-position: right 6rem bottom 6rem; background-size: 8rem; transition: all 0.3s;}
+.main .reason .reason-area a.first {background-image: url('../img/main/bg_reason01_default.png');}
+.main .reason .reason-area a.last {background-image: url('../img/main/bg_reason02_default.png');}
+.main .reason .reason-area a .text-area .text01 {font-size: 3rem; color: #212121; line-height: 1.1667;}
+.main .reason .reason-area a .text-area .text02 {margin-top: 2rem; font-size: 1.8rem; line-height: 1.389; color: #666666;}
+.main .reason .reason-area a .btn-more {width: 24rem; height: 6.5rem; background-color: #CB0010; background-repeat: no-repeat; background-position: left center; background-size: 3rem; color: #ffffff; text-align: center; border-radius: 4rem; transition: all 0.3s;}
+.main .reason .case-area {margin-top: 3rem; background-color: #2D2F2E; border-radius: 2rem; padding: 11.5rem 6rem}
+.main .reason .case-area ul {display: flex;}
+.main .reason .case-area ul li {flex: 1 0; border-left: 1px solid #6C6E6D; padding-left: 6rem;}
+.main .reason .case-area ul li img {width: 5rem;}
+.main .reason .case-area ul li .number {margin-top: 2.5rem; font-weight: 600; color: #ffffff; font-size: 5rem; line-height: 1.2;}
+.main .reason .case-area ul li .text {font-size: 1.6rem; color: #FFFFFF; opacity: 0.75; margin-top: 1rem;}
+
+.main .portfolio {padding-top: 15rem; padding-bottom: 15rem; background-color: #FAFAFA;}
+.main .portfolio .gallery-wrap {margin-top: 5rem;}
+.main .portfolio .btn-more {margin: 10rem auto 0;}
+
+.main .specificity {padding-top: 15rem; padding-bottom: 15rem;}
+.main .specificity .headline-area {text-align: center;}
+.main .specificity .headline-area .eng {color: #CB0010}
+.main .specificity .specificity-area {margin-top: 6rem;}
+.main .specificity .specificity-area ul {display: flex; gap: 0 2.1rem;}
+.main .specificity .specificity-area ul li {flex: 1 0; display: flex; flex-direction: column; justify-content: space-between; height: 31rem; border-radius: 1rem; background-repeat: no-repeat; background-size: 18.2rem; padding: 5.2rem 4rem;}
+.main .specificity .specificity-area ul li:nth-child(odd) {background-image: url('../img/main/bg_specificity01.png'); background-position: right -5rem bottom -5rem;}
+.main .specificity .specificity-area ul li:nth-child(even) {background-image: url('../img/main/bg_specificity02.png'); background-position: right -5rem top -5rem; background-color: #ECECEC;}
+.main .specificity .specificity-area ul li:nth-child(1) {background-color: #CB0010; color: #ffffff;}
+.main .specificity .specificity-area ul li:nth-child(3) {background-image: url('../img/main/bg_specificity01.png'); background-position: right -5rem bottom -5rem; background-color: #2D2F2E; color: #ffffff;}
+.main .specificity .specificity-area ul li .title {font-size: 2.5rem; font-weight: 700;}
+.main .specificity .specificity-area ul li .text {font-size: 1.8rem; line-height: 1.3334; opacity: 0.8;}
+
+.main .customer {padding-top: 15rem; padding-bottom: 15rem; background-color: #FAFAFA;}
+.main .customer .title {text-align: center; font-size: 4rem; font-weight: 700; line-height: 1.375;}
+.main .customer .customer-area {margin-top: 5rem; overflow: hidden; height: 24rem; position: relative;}
+.main .customer .customer-area img {position: absolute; left: 50%; top: 0; transform: translateX(-50%)}
+
+.main .contact {padding-top: 15rem; padding-bottom: 15rem;}
+.main .contact .headline-area {text-align: center;}
+.main .contact .headline-area .eng {color: #CB0010}
+.main .contact .headline-area + * {margin-top: 6rem;}
+.main .contact .tit.v1 {margin-top: 5rem;}
+
+@media (hover: hover) {
+    .main .service .service-list ul li a:hover .title {color: #CB0010;}
+    .main .service .service-list ul li a:hover .title::after {opacity: 1; right: 0;}
+    .main .service .service-list ul li a:hover .img-area img { transform: translate(-50%, -50%) scale(1.08);}
+    
+    .main .keyword .keyword-list ul li a:hover {background-color: #CB0010; border-color: #CB0010; color: #ffffff;}
+    
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide a:hover .img-area {background-color: #CB0010; border-color: #CB0010;}
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide a:hover .img-area img {transform: scale(1.05)}
+
+    .main .reason .reason-area a:hover {background-color: #CB0010;}
+    .main .reason .reason-area a.first:hover {background-image: url('../img/main/bg_reason01_hover.png');}
+    .main .reason .reason-area a.last:hover {background-image: url('../img/main/bg_reason02_hover.png');}
+    .main .reason .reason-area a:hover .text-area .text01,
+    .main .reason .reason-area a:hover .text-area .text02 {color: #ffffff;}
+    .main .reason .reason-area a:hover .btn-more {background-image: url('../img/main/bg_reason_hover.png');}
+}
