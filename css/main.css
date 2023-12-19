@@ -109,6 +109,9 @@
 .main .contact .headline-area .eng {color: #CB0010}
 .main .contact .headline-area + * {margin-top: 6rem;}
 .main .contact .tit.v1 {margin-top: 5rem;}
+.main .contact .tit.v1 + * {margin-top: 2rem;}
+.main .contact .agree-feedback {margin-top: 2rem; display: flex; align-items: flex-start; justify-content: space-between;}
+.main .contact .agree-feedback .btn {width: 25rem;}
 
 @media (hover: hover) {
     .main .service .service-list ul li a:hover .title {color: #CB0010;}
