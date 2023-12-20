@@ -22,9 +22,9 @@
 .logo a { display: block; width: 100%; height: 100%; text-indent: -9999px; }
 
 .gnb {display: flex; justify-content: space-between; align-items: center; margin-left: 14rem; flex: 1 0;}
-.gnb .util {order: 1;}
-.gnb .util ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 1rem;}
-.gnb .util ul li:first-child {margin-right: 1rem;}
+.util {order: 1;}
+.util ul {display: flex; align-items: center; justify-content: flex-start; gap: 0 1rem;}
+.util ul li:first-child {margin-right: 1rem;}
 .gnb .user,
 .gnb .quick {display: none;}
 
