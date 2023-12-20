@@ -51,12 +51,12 @@
 .hide-pc {display: none;}
 
 @media screen and (max-width: 1480) {
-    .view-pad {display: block;}
+    .show-pad {display: block;}
 
     .hide-pad {display: none;}
 }
 @media screen and (max-width: 1024) {
-    .view-mobile {display: block;}
+    .show-mobile {display: block;}
 
     .hide-mobile {display: none;}
 }
