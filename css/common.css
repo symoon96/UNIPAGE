@@ -76,9 +76,9 @@
 #footer .company01 ul li .text {font-size: 1.6rem; line-height: 1.625; margin-top: 0.8rem; color: #ffffff; opacity: 0.5;}
 #footer .company01 ul li .text a {font-size: 1.6rem; line-height: 1.625; color: #ffffff;}
 #footer .company02 {margin-top: 5rem; border-top: 1px solid #575958; padding-top: 5rem;}
-#footer .company02 p {display: flex; align-item: flex-start; justify-content: flex-start; color: #ffffff; opacity: 0.6; line-height: 1.25; gap: 0 1.5rem;}
+#footer .company02 p {display: flex; align-items: flex-start; justify-content: flex-start; color: #ffffff; opacity: 0.6; line-height: 1.25; gap: 0 1.5rem;}
 #footer .company02 p span {position: relative;}
-#footer .company02 p span + span {content: ""; width: 1px; height: 1.5rem; top: 50%; left: -0.8rem; transform: translateY(-50%); background-color: #ffffff; opacity: 0.6;}
+#footer .company02 p span + span::before {content: ""; width: 1px; height: 1.5rem; top: 50%; left: -0.8rem; transform: translateY(-50%); background-color: #ffffff; opacity: 0.6;}
 #footer .copyright {margin-top: 1rem; font-size: 1.6rem; line-height: 1.25; color: #ffffff; opacity: 0.8}
 
 .link{}
