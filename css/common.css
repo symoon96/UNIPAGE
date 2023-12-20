@@ -126,3 +126,7 @@
     -------------------------------------------------------------------*/
     .gnb .depth01 > ul > li.hover > .depth02 > ul > li:hover > a {color: #CB0010}
 }
+
+@media screen and (max-width: 1480px) {
+    .gnb {position: fixed; transform: translateX(100%);}
+}
