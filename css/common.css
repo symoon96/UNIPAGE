@@ -68,7 +68,7 @@
 #footer .quick ul li p {font-size: 1.4rem; line-height: 1.143; color: #777777; text-align: center; margin-top: 1rem}
 #footer .btn-top {position: fixed; bottom: 3.5rem; right: 3.5rem; z-index: 1}
 
-#footer .company01 {padding-left: 31.5rem; background: url('../img/common/logo.png') no-repeat left center; background-size: 15.6rem;}
+#footer .company01 {padding-left: 31.5rem; background: url('../img/common/logo_w.png') no-repeat left center; background-size: 15.6rem;}
 #footer .company01 ul {display: flex; align-items: flex-start; justify-content: space-between;}
 #footer .company01 ul li {flex: none; position: relative;}
 #footer .company01 ul li + li::before {content: ""; width: 1px; height: 5rem; background-color: #616362; position: absolute; left: -8.5rem; top: 0;}
