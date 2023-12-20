@@ -39,7 +39,7 @@
 
 .main .keyword {padding-top: 7rem; padding-bottom: 16rem;}
 .main .keyword .headline-area {text-align: center;}
-.main .keyword .keyword-list {width: 79rem; margin: 5rem auto 0;}
+.main .keyword .keyword-list {max-width: 79rem; margin: 5rem auto 0;}
 .main .keyword .keyword-list ul {display: flex; flex-wrap: wrap; gap: 1.5rem 1rem;}
 .main .keyword .keyword-list ul li {width: calc(25% - 0.75rem)}
 .main .keyword .keyword-list ul li a {display: block; text-align: center; border: 1px solid #E0E0E0; font-size: 1.6rem; color: #545454; border-radius: 2.8rem; line-height: 5.3rem; transition: all 0.3s}
