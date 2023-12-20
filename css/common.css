@@ -128,7 +128,11 @@
 }
 
 @media screen and (max-width: 1480px) {
-    #header .inner .container {justify-content: space-betwwen;}
+    #header .inner .container {justify-content: space-between; height: 10rem;}
     .util ul li:first-of-type {display: none;}
     .gnb {position: fixed; transform: translateX(100%); top: 0; right: 0;}
 }
+
+@media screen and (max-width: 1024px) {)
+
+@media screen and (max-width: 750px) {)
