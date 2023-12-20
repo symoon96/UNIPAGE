@@ -68,6 +68,13 @@
 #footer .quick ul li p {font-size: 1.4rem; line-height: 1.143; color: #777777; text-align: center; margin-top: 1rem}
 #footer .btn-top {position: fixed; bottom: 3.5rem; right: 3.5rem; z-index: 1}
 
+#footer .company01 {padding-left: 22.5rem; background: url('../img/common/logo.png') no-repeat left center; background-size: 15.6rem;}
+#footer .company01 ul {display: flex; align-item: flex-start; justify-content: flex-start;}
+#footer .company01 ul li {flex: 1 0; position: relative; padding-left: 9rem;}
+#footer .company01 ul li + li::before {content: ""; width: 1px; height: 5rem; background-color: #616362; position: absolute; left: 0; top: 0;}
+#footer .company01 ul li .title {font-size: 1.6rem; font-family: 'Helvetica', sans-serif; opacity: 0.8; color: #ffffff;}
+#footer .company01 ul li .text {font-size: 1.6rem; line-height: 1.625; margin-top: 0.8rem; color: #ffffff; opacity: 0.5;}
+
 .link{}
 
 .family{}
