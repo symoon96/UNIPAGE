@@ -18,6 +18,16 @@ $(document).ready(function(){
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+            375: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1025: {
+                slidesPerView: 4,
+                spaceBetween: 45,
+            }
+        }
     });
 
     $('.main .visual .swiper-wrapper .swiper-slide').each(function(){
