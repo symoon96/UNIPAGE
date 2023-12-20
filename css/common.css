@@ -128,5 +128,7 @@
 }
 
 @media screen and (max-width: 1480px) {
-    .gnb {position: fixed; transform: translateX(100%);}
+    #header .inner .container {justify-content: space-betwwen;}
+    .util ul li:first-of-type {display: none;}
+    .gnb {position: fixed; transform: translateX(100%); top: 0; right: 0;}
 }
