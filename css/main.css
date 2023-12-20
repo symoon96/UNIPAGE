@@ -134,6 +134,11 @@
 @media screen and (max-width: 1480px) {
     /* 섹션 */
     .main .visual .swiper-wrapper .swiper-slide .img-area {flex: none; width: 56.858%;}
-    .main .visual controller {left: 19.5rem; transform: translateX(0); margin-left: 0;}
+    .main .visual .controller {left: 19.5rem; transform: translateX(0); margin-left: 0;}
+
+    .main .service .service-list ul {flex-wrap: wrap;}
+    .main .service .service-list ul li {width: calc(50% - 0.75rem); }
+    .main .service .service-list ul li + li {margin-left: 0; padding-left: 0;}
+    .main .service .service-list ul li:nth-child(even) {margin-left: 1.5rem; padding-left: 1.5rem;}
 
 }
