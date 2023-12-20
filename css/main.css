@@ -137,7 +137,7 @@
     .main .visual .controller {left: 19.5rem; transform: translateX(0); margin-left: 0;}
 
     .main .service .service-list ul {flex-wrap: wrap;}
-    .main .service .service-list ul li {width: calc(50% - 0.75rem); }
+    .main .service .service-list ul li {width: calc(50% - 0.75rem); flex: none;}
     .main .service .service-list ul li + li {margin-left: 0; padding-left: 0;}
     .main .service .service-list ul li:nth-child(even) {margin-left: 1.5rem; padding-left: 1.5rem;}
 
