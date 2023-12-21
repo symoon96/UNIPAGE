@@ -29,9 +29,9 @@
 .gnb .user,
 .gnb .quick {display: none;}
 .gnb .user {padding: 0 4.5rem; width: 100%;}
-.gnb .user ul {display: flex; justify-content: flex-start; align-items: center; gap: 0 3rem;}
+.gnb .user ul {display: flex; justify-content: flex-start; align-items: center; gap: 0 2.25rem;}
 .gnb .user ul li {position: relative;}
-.gnb .user ul li + li::before {content: ""; width: 1px; height: 2rem; position: absolute; left: -1.5rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
+.gnb .user ul li + li::before {content: ""; width: 1px; height: 2rem; position: absolute; left: -1.1rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
 .gnb .user ul li a {font-size: 2rem; font-weight: 700; color: #333333; line-height: 1.154;}
 .gnb .quick {padding: 3rem 4.5rem 3.6rem; border-bottom: 1px solid #CCCCCC; width: 100%;}
 .gnb .quick ul {display: flex; justify-content: space-between;}
@@ -189,6 +189,22 @@
     .logo {width: 13.1rem; height: 6.7rem;}
 
     .util ul {gap: 0 1.5rem;}
+
+    .gnb .user {padding: 0 6rem;}
+    .gnb .user ul {gap: 0 3rem;}
+    .gnb .user ul li + li {height: 3rem; left: -1.5rem;}
+    .gnb .user ul li a {font-size: 2.6rem;}
+
+    .gnb .quick {padding: 4rem 6rem 5rem;}
+    .gnb .quick ul li p {margin-top: 1.5rem; font-size: 2.6rem;}
+    
+    .gnb .depth01 {padding: 6rem 6rem;}
+    .gnb .depth01 > ul > li + li {margin-top: 5rem;}
+    .gnb .depth01 .> ul > li > a {font-size: 3rem;}
+
+    .gnb .depth02 {margin-top: 2rem;}
+    .gnb .depth02 > ul > li + li {margin-top: 1.5rem;}
+    .gnb .depth02 > ul > li > a {font-size: 2.4rem;}
 
     #footer {padding-top: 3rem; padding-bottom: 10rem;}
     #footer .quick {right: 4rem; top: 50%; transform: translateY(-50%); padding: 2rem 1rem;}
