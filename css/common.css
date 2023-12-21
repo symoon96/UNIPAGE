@@ -31,12 +31,12 @@
 .gnb .user {padding: 0 6rem;}
 .gnb .user ul {display: flex; justify-content: flex-start; align-items: center; gap: 0 3rem;}
 .gnb .user ul li {position: relative;}
-.gnb .user ul li + li::before {content: ""; width: 1px; height: 3rem; position: absolute; left: -1.5rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
-.gnb .user ul li a {font-size: 2.6rem; font-weight: 700; color: #333333; line-height: 1.154;}
+.gnb .user ul li + li::before {content: ""; width: 1px; height: 1.6rem; position: absolute; left: -1.5rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
+.gnb .user ul li a {font-size: 1.4rem; font-weight: 700; color: #333333; line-height: 1.154;}
 .gnb .quick {padding: 4rem 6rem 5rem; border-bottom: 1px solid #CCCCCC; width: 100%;}
 .gnb .quick ul {display: flex; justify-content: space-between;}
 .gnb .quick ul li a {display: block;}
-.gnb .quick ul li p {text-align: center; margin-top: 1.5rem; font-size: 2.6rem; line-height: 1.153; color: #333333;}
+.gnb .quick ul li p {text-align: center; margin-top: 1.5rem; font-size: 1.4rem; line-height: 1.153; color: #333333;}
 
 .gnb .depth01 {position: relative; z-index: 1;}
 .gnb .depth01 > ul {display: flex; align-items: center; justify-content: flex-start;}
@@ -164,7 +164,7 @@
 @media screen and (max-width: 1480px) {
     #header .inner .container {justify-content: space-between; height: 10rem;}
     .util ul li:first-of-type {display: none;}
-    .gnb {position: fixed; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-top: 10rem; /*transform: translateX(100%);*/ top: 0; right: 0; width: 100%; height: 100vh; z-index: 97; background-color: #ffffff; margin-left: 0;}
+    .gnb {position: fixed; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-top: 10rem; /*transform: translateX(100%);*/ top: 0; right: 0; width: 7.5rem; height: 100vh; z-index: 97; background-color: #ffffff; margin-left: 0;}
     .gnb .user,
     .gnb .quick {display: block;}
 
