@@ -40,7 +40,8 @@ function gnb(){
             }
         })
     } else {
-        $('.gnb ul li').removeClass('hover');
+        $('.gnb *').removeClass('hover');
+        $('.gnb').removeClass('active');
         $('.btn-menu').click(function(){
             if(!$(this).hasClass('active')){
                 $(this).addClass('active');
