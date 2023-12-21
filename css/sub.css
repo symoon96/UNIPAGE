@@ -7,10 +7,13 @@
 /*-------------------------------------------------------------------
     @공통
 -------------------------------------------------------------------*/
-.sub{}
+.sub {padding-top: 15rem; padding-bottom: 14rem;}
 
 /* 서브 비쥬얼 */
-.sub-visual{}
+.sub-title {text-align: center;}
+.sub-title .tit01 {font-size: 1.6rem; letter-spacing: 0.2em; font-weight: 300; color: #CB0010; line-height:; 1.25;}
+.sub-title .tit02 {font-size: 5rem; font-weight: 700; line-height: 1.2; margin-top: 0.5rem;}
+.sub-title .txt {font-size: 1.6rem; color: #666666; line-height: 1.25; margin-top: 2rem;}
 
 .sub-visual.bg01{}
 
