@@ -50,15 +50,15 @@
 /* Device */
 .hide-pc {display: none;}
 
-@media screen and (max-width: 1480) {
-    .show-pad {display: block;}
+@media screen and (max-width: 1480px) {
+    .show-pad {display: block !important;}
 
-    .hide-pad {display: none;}
+    .hide-pad {display: none !important;}
 }
-@media screen and (max-width: 1024) {
-    .show-mobile {display: block;}
+@media screen and (max-width: 1024px) {
+    .show-mobile {display: block !important;}
 
-    .hide-mobile {display: none;}
+    .hide-mobile {display: none !important;}
 }
  
 /* Media */

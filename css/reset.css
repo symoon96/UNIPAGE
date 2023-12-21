@@ -65,6 +65,6 @@ select::-ms-expand{ display: none; }
 
 @media screen and (max-width:1028px) {}
 
-@media screen and (max-width:640px) {
-    
+@media screen and (max-width: 750px) {
+    html {font-size: 1.3334vw}
 }

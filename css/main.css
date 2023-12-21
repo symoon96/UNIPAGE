@@ -23,7 +23,7 @@
 .main .visual .swiper-wrapper .swiper-slide .text-area .btn {margin-top: 5rem; transition: all 0.3s;}
 .main .visual .swiper-wrapper .swiper-slide .img-area {flex: none; width: 79.6rem;}
 .main .visual .swiper-wrapper .swiper-slide .img-area img {margin: -0.8rem 0 -2rem 1.8rem; width: 82.4rem;}
-.main .visual .controller {position: absolute; display: flex; align-items: center; justify-content: flex-start; bottom: 22.4rem; z-index: 1; left: 50%; transform: translateX(-50%); margin-left: -50rem; gap: 0 1rem;}
+.main .visual .controller {position: absolute; display: flex; align-items: center; justify-content: flex-start; bottom: 22.4rem; z-index: 1; left: 50%; transform: translateX(-50%); margin-left: -49.5rem; gap: 0 1rem;}
 
 .main .service {padding-top: 13rem; padding-bottom: 7rem;}
 .main .service .service-list {border-top: 1px solid #CCCCCC; border-bottom: 1px solid #CCCCCC; margin-top: 3rem;}
@@ -54,7 +54,7 @@
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide.best .img-area::before {content: "BEST"; width: 7rem; height: 2.5rem; line-height: 2.5rem; color: #ffffff; border-radius: 1.3rem; position: absolute; z-index: 1; background-color: #cb0010; left: 1rem; top: 1rem; text-align: center; line-height: 2.5rem; font-size: 1.3rem; font-weight: 700;}
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area {margin-top: 2rem; }
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area {position: relative;}
-.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .title {font-size: 2.5rem; font-weight: 700; line-height: 1.2; color: #212121}
+.main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .title {font-size: 2.5rem; font-weight: 700; line-height: 1.2; color: #212121; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .category {margin-top: 1rem; font-size: 1.6rem; color: #9A9A9A; line-height: 1.25;}
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price {margin-top: 2.5rem;}
 .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price dl {display: flex; justify-content: flex-start; align-items: center; font-size: 1.6rem; color: #666666;}
@@ -96,13 +96,13 @@
 .main .specificity .specificity-area ul li:nth-child(even) {background-image: url('../img/main/bg_specificity02.png'); background-position: right -5rem top -5rem; background-color: #ECECEC;}
 .main .specificity .specificity-area ul li:nth-child(1) {background-color: #CB0010; color: #ffffff;}
 .main .specificity .specificity-area ul li:nth-child(3) {background-image: url('../img/main/bg_specificity01.png'); background-position: right -5rem bottom -5rem; background-color: #2D2F2E; color: #ffffff;}
-.main .specificity .specificity-area ul li .title {font-size: 2.5rem; font-weight: 700;}
-.main .specificity .specificity-area ul li .text {font-size: 1.8rem; line-height: 1.3334; opacity: 0.8;}
+.main .specificity .specificity-area ul li .title {font-size: 2.5rem; font-weight: 700; word-break: keep-all;}
+.main .specificity .specificity-area ul li .text {font-size: 1.8rem; line-height: 1.3334; opacity: 0.8; word-break: keep-all;}
 
 .main .customer {padding-top: 15rem; padding-bottom: 15rem; background-color: #FAFAFA;}
 .main .customer .title {text-align: center; font-size: 4rem; font-weight: 700; line-height: 1.375;}
 .main .customer .customer-area {margin-top: 5rem; overflow: hidden; height: 24rem; position: relative;}
-.main .customer .customer-area img {position: absolute; left: 50%; top: 0; transform: translateX(-50%)}
+.main .customer .customer-area img {position: absolute; left: 50%; top: 0; transform: translateX(-50%); max-width: none; width: 214.2rem;}
 
 .main .contact {padding-top: 15rem; padding-bottom: 15rem;}
 .main .contact .headline-area {text-align: center;}
@@ -139,15 +139,86 @@
     .main .service .service-list ul li + li {margin-left: 1.5rem; padding-left: 1.5rem;}
     .main .service .service-list ul li .title {padding-right: 0; width: 100%}
     
+    .main .reason .reason-area {flex-direction: column; gap: 2rem 3rem;}
+    .main .reason .reason-area a .btn-more {margin-top: 10rem;}
+    .main .reason .case-area {border-radius: 0; width: calc(100% + 8rem); margin-left: -4rem; padding: 11.5rem 0;}
+    .main .reason .case-area ul li {flex: 1 0; padding-left: 0; border-left: 0;}
+    .main .reason .case-area ul li + li {border-left: 1px solid #6C6E6D;}
+    .main .reason .case-area ul li img {margin: 0 auto;}
+    .main .reason .case-area ul li .number {text-align: center;}
+    .main .reason .case-area ul li .text {text-align: center}
 
+    .main .specificity .specificity-area ul li {padding: 5rem 3rem;}
 }
 
 @media screen and (max-width: 1024px) {
-    .main .service .service-list {position: relative}
+    .main [class^='secction'] .headline-area .title01 {font-size: 2.4rem; line-height: 1.25;}
+    .main [class^='secction'] .headline-area .title01 + .title02 {margin-top: 0;}
+    .main [class^='secction'] .headline-area .title02 {font-size: 5rem;}
+
+    .main .visual .swiper-wrapper .swiper-slide {padding-top: 10rem; padding-bottom: 10rem;}
+    .main .visual .swiper-wrapper .swiper-slide .container {flex-direction: column-reverse; align-items: flex-start; height: auto;}
+    .main .visual .swiper-wrapper .swiper-slide .img-area {width: 100%;}
+    .main .visual .swiper-wrapper .swiper-slide .img-area img {margin: -0.6rem 0 -2.2rem -0.8rem; width: calc(100% + 2.3rem); max-width: none;}
+    .main .visual .swiper-wrapper .swiper-slide .text-area {flex: none; width: 100%; margin-top: 6rem;}
+    .main .visual .swiper-wrapper .swiper-slide .text-area .category {line-height: 4rem; padding: 0 2.5rem; border-radius: 2rem; font-size: 2.4rem;}
+    .main .visual .swiper-wrapper .swiper-slide .text-area .title {font-size: 7rem; line-height: 1.172;}
+    .main .visual .swiper-wrapper .swiper-slide .text-area .text {font-size: 2.4rem; line-height: 1.4167;}
+    .main .visual .controller {bottom: 10rem; left: 19.9rem;}
+
+    .main .service {padding-top: 10rem; padding-bottom: 7.5rem;}
+    .main .service .service-list {position: relative; margin-top: 5rem;}
     .main .service .service-list::before {content: ""; width: 100%; height: 1px; background-color: #CCCCCC; top: 50%; left: 0; transform: translateY(-50%); position: absolute;}
     .main .service .service-list ul {flex-wrap: wrap;}
-    .main .service .service-list ul li {width: 50%; flex: none;}
+    .main .service .service-list ul li {width: 50%; flex: none; padding-top: 5rem; padding-bottom: 5rem;}
     .main .service .service-list ul li + li {margin-left: 0; padding-left: 0; border-left: 0;}
     .main .service .service-list ul li:nth-child(odd) {padding-right: 1.5rem;}
     .main .service .service-list ul li:nth-child(even) {padding-left: 1.5rem; border-left: 1px solid #CCCCCC;}
+    .main .service .service-list ul li .text {font-size: 2.2rem;}
+    .main .service .service-list ul li .title {font-size: 2.8rem; margin-top: 0.5rem; line-height: 1.215;}
+    .main .service .service-list ul li .img-area {margin-top: 5rem;}
+
+    .main .keyword {padding-top: 7.5rem; padding-bottom: 15rem;}
+    .main .keyword .keyword-list {max-width: 100%; margin: 4rem auto 0;}
+    .main .keyword .keyword-list ul {gap: 1rem 1rem;}
+    .main .keyword .keyword-list ul li {width: calc(25% - 0.75rem)}
+    .main .keyword .keyword-list ul li a {font-size: 2.2rem; border-radius: 1rem; line-height: 1.228; padding: 1rem 0;}
+    .main .keyword .search {margin: 2.5rem auto 0; max-width: 100%;}
+    .main .keyword .search input[type="text"] {flex: 1 0;}
+    .main .keyword .search .btn {width: 18rem; height: 6rem; font-size: 1.6rem; border-radius: 0.5rem;}
+    
+    .main .recommend .recommend-swiper {padding-bottom: 9.5rem;}
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .title {font-size: 2.8rem; line-height: 1.215;}
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .subject-area .category {margin-top: 0.6rem; font-size: 2.2rem; line-height: 1.182;}
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price {margin-top: 3rem;}
+    .main .recommend .recommend-swiper .swiper-wrapper .swiper-slide .cont-area .price dl {font-size: 2.4rem;}
+    .main .recommend .recommend-swiper .swiper-pagination {height: 1.4rem;}
+    .main .recommend .recommend-swiper .swiper-pagination .swiper-pagination-bullet {width: 1.4rem; height: 1.4rem;}
+
+    .main .reason {padding-top: 7.5rem; padding-bottom: 0;}
+    .main .reason .reason-area a {padding: 5.5rem 5rem 7rem; background-position: right 6rem bottom 6.5rem;}
+    .main .reason .reason-area a .text-area .text01 {font-size: 3.4rem; line-height: 1.177;}
+    .main .reason .reason-area a .text-area .text02 {margin-top: 1rem; font-size: 2.4rem; line-height: 1.4167;}
+    .main .reason .reason-area a .btn-more {width: 31rem; font-size: 2.4rem;}
+    .main .reason .case-area {margin-top: 4rem; padding: 6.5rem 0}
+    .main .reason .case-area ul li img {width: 5rem}
+    .main .reason .case-area ul li .number {margin-top: 2rem; font-size: 4rem;}
+    .main .reason .case-area ul li .text {font-size: 2.2rem; line-height: 1.137;}
+
+    .main .portfolio {background: none; padding-bottom: 7.5rem;}
+    
+    .main .specificity .specificity-area {margin-top: 5rem;}
+    .main .specificity .specificity-area ul {flex-wrap: wrap; gap: 2rem 2rem }
+    .main .specificity .specificity-area ul li {flex: none; width: calc(50% - 1rem); height: calc(50vw - 5rem); padding: 5rem 2.5rem;}
+    .main .specificity .specificity-area ul li .title {font-size: 3.2rem; line-height: 1.125;}
+    .main .specificity .specificity-area ul li .text {font-size: 2.4rem; line-height: 1.334;}
+    .main .specificity .specificity-area ul li:nth-child(3) {order: 1;}
+    
+    .main .customer .title {font-size: 5rem; line-height: 1.2;}
+    .main .customer .customer-area {height: 37rem; position: relative;}
+    .main .customer .customer-area img {width: 128rem;}
+
+    .main .contact .agree-feedback {margin-top: 3rem; flex-direction: column; gap: 6rem 0;}
+    .main .contact .agree-feedback .btn {width: 100%;}
+
 }

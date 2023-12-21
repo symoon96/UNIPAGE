@@ -24,6 +24,7 @@
 .btn-mypage {width: 4.5rem; height: 4.5rem; border-radius: 50%; background: #F7F7F7 url('../img/icon/ic_mypage.png') no-repeat center; background-size: 2.5rem; transition: all 0.3s;}
 .btn-cart {width: 4.5rem; height: 4.5rem; border-radius: 50%; background: #F7F7F7 url('../img/icon/ic_cart.png') no-repeat center; background-size: 2.5rem; transition: all 0.3s;}
 .btn-menu {width: 4.5rem; height: 4.5rem; border-radius: 50%; background: #F7F7F7 url('../img/icon/ic_menu_default.png') no-repeat center; background-size: 2.5rem; transition: all 0.3s;}
+.btn-menu.active {background: #CB0010 url('../img/icon/ic_menu_active.png') no-repeat center; background-size: 2.5rem;}
 [class*="btn-visual-"] {width: 4.5rem; height: 4.5rem; border-radius: 50%; border: 1px solid #888888; transition: all 0.3s; background-size: 2rem; background-position: center; background-repeat: no-repeat;}
 .btn-visual-prev {background-image: url('../img/icon/ic_visual_prev_default.png');}
 .btn-visual-next {background-image: url('../img/icon/ic_visual_next_default.png');}
@@ -55,7 +56,7 @@ i[class^='ic-'] {display: block; background-size: 100%; background-repeat: no-re
 .gallery-wrap.v1 ul li .img-area {border: 1px solid #E7E7E7; border-radius: 0.5rem; overflow: hidden; transition: all 0.3s}
 .gallery-wrap.v1 ul li .cont-area {margin-top: 2rem; }
 .gallery-wrap.v1 ul li .cont-area .subject-area {position: relative;}
-.gallery-wrap.v1 ul li .cont-area .subject-area .title {font-size: 2rem; font-weight: 700; line-height: 1.2; color: #212121}
+.gallery-wrap.v1 ul li .cont-area .subject-area .title {font-size: 2rem; font-weight: 700; line-height: 1.2; color: #212121; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
 .gallery-wrap.v1 ul li .cont-area .subject-area .category {margin-top: 0.5rem; font-size: 1.5rem; color: #9A9A9A; line-height: 1.2;}
 .gallery-wrap.v1 ul li .cont-area .price {margin-top: 1.5rem;}
 .gallery-wrap.v1 ul li .cont-area .price dl {display: flex; justify-content: flex-start; align-items: center; font-size: 1.5rem; line-height: 1.667; color: #666666;}
@@ -64,7 +65,7 @@ i[class^='ic-'] {display: block; background-size: 100%; background-repeat: no-re
 .gallery-wrap.v2 ul li {width: calc(33.334% - 3rem); transition: all 0.3s; padding-bottom: 3.5rem; border-radius: 1rem;}
 .gallery-wrap.v2 ul li .img-area {border: 1px solid #E7E7E7; border-radius: 1rem; overflow: hidden; transition: all 0.3s; border: 1px solid #E7E7E7;}
 .gallery-wrap.v2 ul li .cont-area {margin-top: 2rem; transition: all 0.3s; background-repeat: no-repeat; background-position: right 4.2rem top 0.8rem; background-size: 1.7rem;}
-.gallery-wrap.v2 ul li .cont-area .tit {font-size: 3rem; font-weight: 700; line-height: 1.2; color: #212121}
+.gallery-wrap.v2 ul li .cont-area .tit {font-size: 3rem; font-weight: 700; line-height: 1.2; color: #212121;  overflow: hidden; white-space: nowrap; text-overflow: ellipsis; word-break: break-all;}
 .gallery-wrap.v2 ul li .cont-area .category {margin-top: 1.2rem; font-size: 1.6rem; color: #888888; line-height: 1.25; display: flex; align-items: center; justify-content: flex-start; gap: 0 2rem;}
 .gallery-wrap.v2 ul li .cont-area .category p {position: relative;}
 .gallery-wrap.v2 ul li .cont-area .category p + p::before {content: ""; width: 1px; height: 1.5rem; background-color: #CCCCCC; position: absolute; left: -1rem; top: 50%; transform: translateY(-50%)}
@@ -114,7 +115,7 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
 .check-group.v1 .check.v1 {flex: 1 0;}
 
 .check.v1 input[type="checkbox"] {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
-.check.v1 input[type="checkbox"] + label {display: block; width: 100%; border: 1px solid #D9D9D9; border-radius: 1rem; padding: 2.7rem 0 3rem; transition: all 0.3s;}
+.check.v1 input[type="checkbox"] + label {display: block; cursor: pointer; width: 100%; border: 1px solid #D9D9D9; border-radius: 1rem; padding: 2.7rem 0 3rem; transition: all 0.3s;}
 .check.v1 input[type="checkbox"] + label i {margin: 0 auto;}
 .check.v1 input[type="checkbox"] + label p {text-align: center; font-size: 1.8rem; text-align: center; color: #999999; margin-top: 2.4rem; transition: all 0.3s;}
 .check.v1 input[type="checkbox"]:checked + label {border-color: #CB0010;}
@@ -127,7 +128,6 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
 .check.v2 input[type="checkbox"] + label a {text-decoration: underline; color: #888888;}
 .check.v2 input[type="checkbox"] + label::before {content: ""; width: 1.5rem; height: 1.5rem; background: url('../img/icon/ic_check01_off.png') no-repeat center; background-size: 100%; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
 .check.v2 input[type="checkbox"]:checked + label::before {background: url('../img/icon/ic_check01_on.png') no-repeat center; background-size: 100%;}
-.check.v2 input[type="text"] {height: 3.2rem; width: 12rem;}
 
 /* form mixins */
 .form-group {display: flex; flex-wrap: wrap; gap: 2rem 2rem;}
@@ -150,6 +150,7 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
     .btn-mypage:hover {background-color: #E7E7E7;}
     .btn-cart:hover {background-color: #E7E7E7;}
     .btn-menu:hover {background: #CB0010 url('../img/icon/ic_menu_hover.png') no-repeat center; background-size: 2.5rem;}
+    .btn-menu.active:hover {background: #CB0010 url('../img/icon/ic_menu_active.png') no-repeat center; background-size: 2.5rem;}
     [class*="btn-visual-"]:hover {border-color: #212121;}
     .btn-visual-prev:hover {background-image: url('../img/icon/ic_visual_prev_hover.png');}
     .btn-visual-next:hover {background-image: url('../img/icon/ic_visual_next_hover.png');}
@@ -187,6 +188,50 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
 }
 
 @media screen and (max-width: 1024px) {
+    /* button */
+    .btn.sm {height: 5rem; font-size: 2.2rem; padding: 0 2.5rem;}
+    .btn.md {height: 7rem; font-size: 2.4rem; padding: 0 0; border-radius: 1rem;}
+
+    .btn-mypage {width: 6rem; height: 6rem; background-size: 3rem;}
+    .btn-cart {width: 6rem; height: 6rem; background-size: 3rem;}
+    .btn-menu {width: 6rem; height: 6rem; background-size: 3rem;}
+    [class*="btn-visual-"] {width: 5rem; height: 5rem;}
+
+    /* icon */
+
     .gallery-wrap.v1 ul {gap: 4rem 2.4rem;}
     .gallery-wrap.v1 ul li {width: calc(50% - 1.2rem)}
+    .gallery-wrap.v1 ul li .cont-area {margin-top: 1.5rem; }
+    .gallery-wrap.v1 ul li .cont-area .subject-area .title {font-size: 2.8rem; line-height: 1.215;}
+    .gallery-wrap.v1 ul li .cont-area .subject-area .category {font-size: 2.2rem;}
+    .gallery-wrap.v1 ul li .cont-area .price {margin-top: 3rem;}
+    .gallery-wrap.v1 ul li .cont-area .price dl {font-size: 2.4rem; line-height: 1.4167;}
+
+    .gallery-wrap.v2 ul {gap: 5rem 1.5rem;}
+    .gallery-wrap.v2 ul li {width: calc(50% - 0.75rem); padding-bottom: 0;}
+    .gallery-wrap.v2 ul li .cont-area {margin-top: 1rem;}
+    .gallery-wrap.v2 ul li .cont-area .tit {font-size: 2.8rem; line-height: 1.215;}
+    .gallery-wrap.v2 ul li .cont-area .category {margin-top: 0.5rem; font-size: 2.2rem; line-height: 1.182;}
+    .gallery-wrap.v2 ul li .cont-area .category p + p::before {height: 2.6rem;}
+
+    /* title */
+    .tit.v1 {font-size: 3.2rem;}
+    .tit.v1 span {font-size: 2.4rem; margin-left: 1rem;}
+    
+    /* form group */
+    input[type="text"] {font-size: 2.2rem;}
+
+    .check-group.v1 {gap: 0 0.5rem; align-items: stretch;}
+
+    .check.v1 input[type="checkbox"] + label {height: 100%; padding: 1.5rem 0; display: flex; flex-direction: column; justify-content: center;}
+    .check.v1 input[type="checkbox"] + label p {margin-top: 1.2rem; font-size: 2.4rem; line-height: 1.25; min-height: 6rem;}
+
+    .check.v2 {gap: 1.5rem;}
+    .check.v2 input[type="checkbox"] + label {min-width: 2.2rem; min-height: 2.2rem;}
+    .check.v2 input[type="checkbox"] + label p {padding-left: 3.5rem; font-size: 2.2rem;}
+    .check.v2 input[type="checkbox"] + label::before {width: 2.2rem; height: 2.2rem;}
+
+    /* form mixins */
+    .form-group .half {width: 100%;}
+    
 }
