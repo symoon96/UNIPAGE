@@ -194,7 +194,7 @@
 
     .gnb .user {padding: 0 6rem;}
     .gnb .user ul {gap: 0 3rem;}
-    .gnb .user ul li + li {height: 3rem; left: -1.5rem;}
+    .gnb .user ul li + li::before {height: 3rem; left: -1.5rem;}
     .gnb .user ul li a {font-size: 2.6rem;}
 
     .gnb .quick {padding: 4rem 6rem 5rem;}
