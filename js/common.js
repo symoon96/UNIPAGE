@@ -48,13 +48,13 @@ function gnb(){
     
                 $('.gnb').addClass('active');
                 setTimeout(() => {
-                    $('.gnb.active').css('opacity', '1')
+                    $('.gnb').css('opacity', '1')
                 }, 100);
             } else {
                 $(this).removeClass('active');
                 $('.gnb').removeClass('active');
                 setTimeout(() => {
-                    $('.gnb.active').css('opacity', '0')
+                    $('.gnb').css('opacity', '0')
                 }, 100);
             }
         })
