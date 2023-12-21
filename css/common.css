@@ -36,6 +36,7 @@
 .gnb .quick {padding: 3rem 4.5rem 3.6rem; border-bottom: 1px solid #CCCCCC; width: 100%;}
 .gnb .quick ul {display: flex; justify-content: space-between;}
 .gnb .quick ul li a {display: block;}
+.gnb .quick ul li img {width: 6rem; margin: 0 auto;}
 .gnb .quick ul li p {text-align: center; margin-top: 1.2rem; font-size: 2rem; line-height: 1.153; color: #333333;}
 
 .gnb .depth01 {position: relative; z-index: 1;}
@@ -203,6 +204,7 @@
     .gnb .user ul li a {font-size: 2.6rem;}
 
     .gnb .quick {padding: 4rem 6rem 5rem;}
+    .gnb .quick ul li img {width: 8rem;}
     .gnb .quick ul li p {margin-top: 1.5rem; font-size: 2.6rem;}
     
     .gnb .depth01 {padding: 6rem 6rem;}

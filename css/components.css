@@ -70,6 +70,20 @@ i[class^='ic-'] {display: block; background-size: 100%; background-repeat: no-re
 .gallery-wrap.v2 ul li .cont-area .category p {position: relative;}
 .gallery-wrap.v2 ul li .cont-area .category p + p::before {content: ""; width: 1px; height: 1.5rem; background-color: #CCCCCC; position: absolute; left: -1rem; top: 50%; transform: translateY(-50%)}
 
+/* list peripheral */
+/* paging */
+.paging {display: flex; align-items: center; justify-content: center;}
+.paging ul {display: flex; align-items: center; justify-content: center; gap: 0 0.8rem;}
+.paging ul li {flex: none;}
+.paging ul li a {display: block; width: 4rem; height: 4rem; border: 1px solid #E0E0E0; background-color: #ffffff; text-align: center; line-height: 3.8rem; color: #888888; font-size: 1.8rem; border-radius: 0.3rem;}
+.paging ul li.on a {border-color: #CB0010; font-weight: 700; color: #CB0010; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);}
+.paging ul li.front a {background: #ffffff url('../img/icon/ic_paging_front.png') no-repeat center; background-size: 1.4rem;}
+.paging ul li.prev {margin-right: 0.7rem;}
+.paging ul li.prev a {background: #ffffff url('../img/icon/ic_paging_prev.png') no-repeat center; background-size: 0.8rem;}
+.paging ul li.next {margin-left: 0.7rem;}
+.paging ul li.next a {background: #ffffff url('../img/icon/ic_paging_next.png') no-repeat center; background-size: 0.8rem;}
+.paging ul li.back a {background: #ffffff url('../img/icon/ic_paging_back.png') no-repeat center; background-size: 1.4rem;}
+
 /* form, input */
 .inp-wrap{}
 .inp-item{}
@@ -95,15 +109,7 @@ i[class^='ic-'] {display: block; background-size: 100%; background-repeat: no-re
 
 .tbl-wrap.v1{}
 
-/* paging */
-.paging{}
-.paging ul{}
-.paging ul li{}
-.paging ul li a{}
-.paging ul li.front{}
-.paging ul li.prev{}
-.paging ul li.next{}
-.paging ul li.back{}
+
 
 /*-------------------------------------------------------------------
     @collections
@@ -184,6 +190,7 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
 
 @media screen and (max-width: 1480px) {
     .btn-menu {position: relative; z-index: 98}
+    .btn-top {width: 5.2rem; height: 5.2rem; background-size: 1.5rem;}
 
     .gallery-wrap.v1 ul {gap: 4rem 2.5rem;}
     .gallery-wrap.v1 ul li {width: calc(20% - 2rem);}
@@ -198,6 +205,7 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
     .btn-cart {width: 6rem; height: 6rem; background-size: 3rem;}
     .btn-menu {width: 6rem; height: 6rem; background-size: 3rem;}
     [class*="btn-visual-"] {width: 5rem; height: 5rem;}
+    .btn-top {width: 7rem; height: 7rem; background-size: 1.9rem;}
 
     /* icon */
 
