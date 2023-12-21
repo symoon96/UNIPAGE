@@ -28,15 +28,15 @@
 .util ul li:first-child {margin-right: 1rem;}
 .gnb .user,
 .gnb .quick {display: none;}
-.gnb .user {padding: 0 6rem;}
+.gnb .user {padding: 0 4.5rem; width: 100%;}
 .gnb .user ul {display: flex; justify-content: flex-start; align-items: center; gap: 0 3rem;}
 .gnb .user ul li {position: relative;}
-.gnb .user ul li + li::before {content: ""; width: 1px; height: 1.6rem; position: absolute; left: -1.5rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
-.gnb .user ul li a {font-size: 1.4rem; font-weight: 700; color: #333333; line-height: 1.154;}
-.gnb .quick {padding: 4rem 6rem 5rem; border-bottom: 1px solid #CCCCCC; width: 100%;}
+.gnb .user ul li + li::before {content: ""; width: 1px; height: 2rem; position: absolute; left: -1.5rem; top: 50%; transform: translateY(-50%); background-color: #333333;}
+.gnb .user ul li a {font-size: 2rem; font-weight: 700; color: #333333; line-height: 1.154;}
+.gnb .quick {padding: 3rem 4.5rem 3.6rem; border-bottom: 1px solid #CCCCCC; width: 100%;}
 .gnb .quick ul {display: flex; justify-content: space-between;}
 .gnb .quick ul li a {display: block;}
-.gnb .quick ul li p {text-align: center; margin-top: 1.5rem; font-size: 1.4rem; line-height: 1.153; color: #333333;}
+.gnb .quick ul li p {text-align: center; margin-top: 1.2rem; font-size: 2rem; line-height: 1.153; color: #333333;}
 
 .gnb .depth01 {position: relative; z-index: 1;}
 .gnb .depth01 > ul {display: flex; align-items: center; justify-content: flex-start;}
@@ -168,15 +168,15 @@
     .gnb .user,
     .gnb .quick {display: block;}
 
-    .gnb .depth01 {padding: 6rem 6rem; flex: 1 0; overflow: auto; width: 100%; }
+    .gnb .depth01 {padding: 4.5rem 4.5rem; flex: 1 0; overflow: auto; width: 100%; }
     .gnb .depth01 > ul {flex-direction: column; align-items: flex-start;}
     .gnb .depth01 > ul > li {width: 100%; height: auto;}
-    .gnb .depth01 > ul > li + li {margin-top: 5rem;}
-    .gnb .depth01 > ul > li > a {text-align: left; line-height: 1.2; font-size: 3rem; font-weight: 700;}
+    .gnb .depth01 > ul > li + li {margin-top: 3.6rem;}
+    .gnb .depth01 > ul > li > a {text-align: left; line-height: 1.2; font-size: 2.2rem; font-weight: 700;}
 
-    .gnb .depth02 {display: block; position: static; opacity: 1; margin-top: 2rem;}
-    .gnb .depth02 > ul > li + li {margin-top: 1.5rem;}
-    .gnb .depth02 > ul > li > a {font-size: 2.4rem; color: #999999; line-height: 1.25;}
+    .gnb .depth02 {display: block; position: static; opacity: 1; margin-top: 1.5rem;}
+    .gnb .depth02 > ul > li + li {margin-top: 1.2rem;}
+    .gnb .depth02 > ul > li > a {font-size: 1.8rem; color: #999999; line-height: 1.25;}
 
     #footer .company01 {padding-left: 0; padding-top: 10.6rem; background-position: left top;}
     #footer .company01 ul li + li::before {display: none;}
