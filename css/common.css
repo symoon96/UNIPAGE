@@ -190,6 +190,8 @@
 
     .util ul {gap: 0 1.5rem;}
 
+    .gnb {width: 100%;}
+
     .gnb .user {padding: 0 6rem;}
     .gnb .user ul {gap: 0 3rem;}
     .gnb .user ul li + li {height: 3rem; left: -1.5rem;}
@@ -200,7 +202,7 @@
     
     .gnb .depth01 {padding: 6rem 6rem;}
     .gnb .depth01 > ul > li + li {margin-top: 5rem;}
-    .gnb .depth01 .> ul > li > a {font-size: 3rem;}
+    .gnb .depth01 > ul > li > a {font-size: 3rem;}
 
     .gnb .depth02 {margin-top: 2rem;}
     .gnb .depth02 > ul > li + li {margin-top: 1.5rem;}
