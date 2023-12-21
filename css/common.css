@@ -168,7 +168,7 @@
 @media screen and (max-width: 1480px) {
     #header .inner .container {justify-content: space-between; height: 10rem;}
     .util ul li:first-of-type {display: none;}
-    .gnb {position: fixed; opacity: 0; /*display: flex;*/ flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-top: 10rem; top: 0; right: 0; width: 75rem; height: 100vh; z-index: 97; background-color: #ffffff; margin-left: 0; transition: all 0.3s;}
+    .gnb {position: fixed; opacity: 0; display: none; /*display: flex;*/ flex-direction: column; justify-content: flex-start; align-items: flex-start; padding-top: 10rem; top: 0; right: 0; width: 75rem; height: 100vh; z-index: 97; background-color: #ffffff; margin-left: 0; transition: all 0.3s;}
     .gnb.active {display: flex;}
     .gnb .user,
     .gnb .quick {display: block;}
