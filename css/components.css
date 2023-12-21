@@ -183,6 +183,8 @@ input[type="text"] {height: 6rem; display: block; width: 100%; border-radius: 0.
 }
 
 @media screen and (max-width: 1480px) {
+    .btn-menu {position: relative; z-index: 98}
+
     .gallery-wrap.v1 ul {gap: 4rem 2.5rem;}
     .gallery-wrap.v1 ul li {width: calc(20% - 2rem);}
 }
