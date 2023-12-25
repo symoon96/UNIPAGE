@@ -17,9 +17,9 @@
 /* Border */
 
 /* Align*/
-.ta-l{ text-align: left; }
-.ta-c{ text-align: center; }
-.ta-r{ text-align: right; }
+.ta-l{ text-align: left !important; }
+.ta-c{ text-align: center !important; }
+.ta-r{ text-align: right !important; }
 
 /* 말줄임 */
 
@@ -78,5 +78,9 @@
 /* 배경 */
 
 /* 텍스트 */
+.txt-red {color: #CB0010 !important}
+.txt-orange {color: #F98D00 !important}
+.txt-blue {color: #0079D5 !important}
+.txt-purple {color: #9C43DF !important}
 
 /* 라인 */

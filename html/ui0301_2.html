@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>유니페이지</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+    <!-- skip-nav -->
+    <div id="skip-nav">
+        <a href="#nav">메인메뉴 바로가기</a>
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="inner">
+            <div class="container">
+                <h1 class="logo"><a href="javascript:void(0);">유티페이지</a></h1>
+                <div class="gnb">
+                    <button class="btn-ic btn-close"></button>
+                    <div class="user">
+                        <ul>
+                            <li><a href="javascript:void(0);">로그인</a></li>
+                            <li><a href="javascript:void(0);">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_inquiry.png">
+                                    <p>견적문의</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_portfolio.png">
+                                    <p>포트폴리오</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_guide.png">
+                                    <p>제작안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_faq.png">
+                                    <p>FAQ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">포트폴리오</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">포트폴리오</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">서비스</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">서비스</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">홈페이지</a></li>
+                                        <li><a href="javascript:void(0);">템플릿</a></li>
+                                        <li><a href="javascript:void(0);">수출바우처</a></li>
+                                        <li><a href="javascript:void(0);">유지보수/호스팅</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">제작/주문</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">제작/주문</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">템플릿 제작</a></li>
+                                        <li><a href="javascript:void(0);">간편 제작</a></li>
+                                        <li><a href="javascript:void(0);">고급 제작</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">고객센터</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">고객센터</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+                                        <li><a href="javascript:void(0);">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">회사소개</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">회사소개</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">회사소개</a></li>
+                                        <li><a href="javascript:void(0);">찾아오시는 길</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-area">
+                        <a href="javascript:void(0)" class="guide-video">
+                            <p class="text01">제작 동영상 가이드</p>
+                            <p class="text02">
+                                복잡한 제작방법 동영상 가이드로 <br>
+                                쉽게 확인하고 결정해 보세요 :)
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="util">
+                    <ul>
+                        <li><button class="btn sm rnd fill-red">견적문의</button></li>
+                        <li><button class="btn-ic btn-mypage"></button></li>
+                        <li><button class="btn-ic btn-cart"></button></li>
+                        <li><button class="btn-ic btn-menu"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="container">
+            <!-- <div class="sub-title">
+                <p class="tit01">ORDER</p>
+                <p class="tit02">템플릿 제작</p>
+                <button class="btn md rnd line-red"><strong>템플릿 제작</strong> 이란?</button>
+            </div> -->
+            <div class="template">
+                <div class="loc">
+                    <ul>
+                        <li><a href="javascript:void(0);">HOME</a></li>
+                        <li>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="javascript:void(0);">제작/주문</a></li>
+                        <li>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="javascript:void(0);">템플릿</a></li>
+                    </ul>
+                </div>
+                <div class="view-wrap v3">
+                    <div class="img-area">
+                        <img src="../img/temp/@temp_thumb01_01.png" alt="">
+                    </div>
+                    <div class="info-area">
+                        <div class="data-area">
+                            <p class="tit">지우데이타</p>
+                            <p class="category">기업</p>
+                            <div class="data">
+                                <dl>
+                                    <dt>구매타입</dt>
+                                    <dd>
+                                        <p>PC+M 복사형 : <strong>300,000원</strong></p>
+                                        <p>PC+M 수정형 : <strong>500,000원</strong></p>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>제작언어</dt>
+                                    <dd><strong>한국어</strong></dd>
+                                </dl>
+                            </div>
+                            <div class="btn-wrap">
+                                <button class="btn sm fill-black">PC 샘플보기</button>
+                                <button class="btn sm fill-gray">MOBIL 샘플보기</button>
+                            </div>
+                        </div>
+                        <dl class="option">
+                            <dt>옵션1</dt>
+                            <dd>
+                                <select name="" id="">
+                                    <option value="" hidden>[필수] 옵션을 선택해 주세요</option>
+                                </select>
+                                <p class="txt-note">
+                                    * 최소 주문수량 1개 이상 <br>
+                                    * 위 옵션선택 박스를 선택하시면 아래에 상품이 추가됩니다.
+                                </p>
+                            </dd>
+                        </dl>
+                        <dl class="certain">
+                            <dt>
+                                <strong>엘리트치과</strong> <br>
+                                의료/건강 <br><br>
+                                
+                                PC+M 복사형
+                            </dt>
+                            <dd>
+                                <p class="txt-price"><strong>300,000</strong>원</p>
+                                <div class="count">
+                                    <div class="value">
+                                        <button class="btn-ic btn-minus"></button>
+                                        <input type="text" name="" id="">
+                                        <button class="btn-ic btn-plus"></button>
+                                    </div>
+                                    <button class="btn-ic btn-cancle"></button>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="value">
+                            <dt>총 상품 금액<span>(수량)</span></dt>
+                            <dd>
+                                <p class="txt-price"><strong>300,000</strong>원<span>(1개)</span></p>
+                            </dd>
+                        </dl>
+                        <button class="btn md fill-red">구매하기</button>
+                        <div class="btn-wrap"><button class="btn md line-gray">장바구니 담기</button><button class="btn md line-gray">관심상품 등록</button></div>
+                    </div>
+                </div>
+
+                <div class="tab-wrap v2">
+                    <div class="tab-btn-wrap">
+                        <button class="tab-btn on">상품상세정보</button>
+                        <button class="tab-btn">상품구입안내</button>
+                        <button class="tab-btn">상품사용후기(0)</button>
+                        <button class="tab-btn">상품 Q&A</button>
+                    </div>
+                    <div class="tab-cont-wrap">
+                        <div class="tab-cont">
+                            <p class="tab-tit">상품상세정보</p>
+                        </div>
+                        <div class="tab-cont">
+                            <p class="tab-tit">상품상세정보</p>
+                            <div class="info-box">
+                                <p class="title">[ 상품결제정보 ]</p>
+                                <p class="text">결제정보 입력</p>
+                                <p class="title">[ 배송정보 ]</p>
+                                <p class="text">배송정보 입력</p>
+                                <p class="title">[ 서비스문의 ]</p>
+                                <p class="text">서비스 문의 안내 정보 입력</p>
+                                <p class="title">[ 교환 및 반품정보 ]</p>
+                                <p class="text">교환 및 반품정보 입력</p>
+                            </div>
+                        </div>
+                        <div class="tab-cont">
+                            <p class="tab-tit">상품상세정보</p>
+                            <div class="review-wrap">
+                                <div class="write-area">
+                                    <textarea name="" id=""></textarea>
+                                    <div class="write-option">
+                                        <button class="btn btn-photo">사진추가</button>
+                                        <div class="submit">
+                                            <select name="" id="">
+                                                <option value="">★★★★★</option>
+                                            </select>
+                                            <div class="btn-wrap">
+                                                <button class="btn fill-black">리뷰등록</button>
+                                                <button class="btn line-gray">전체보기</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-cont">
+                            <p class="tab-tit">상품상세정보</p>
+                            <div class="qna-area">
+                                <div class="btn-wrap">
+                                    <button class="btn fill-black">리뷰등록</button>
+                                    <button class="btn line-gray">전체보기</button>
+                                </div>
+                                <div class="list-wrap v3">
+                                    <table>
+                                        <colgroup>
+                                            <col class="hide-mobile" style="width: 10rem;">
+                                            <col>
+                                            <col class="hide-mobile" style="width: 15rem;">
+                                            <col class="hide-mobile" style="width: 15rem;">
+                                        </colgroup>
+                                        <thead class="hide-mobile">
+                                            <tr>
+                                                <th>번호</th>
+                                                <th>제목</th>
+                                                <th>이름</th>
+                                                <th>작성일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="number hide-mobile">2</td>
+                                                <td class="ta-l">
+                                                    <p class="tit lock"><strong class="category">[배송문의]</strong> <a href="javascript:void(0);">상품 입고일정 및 배송기간 문의</a> <span calss="cnt">(1)</span></p>
+                                                </td>
+                                                <td class="hide-mobile">유니*</td>
+                                                <td class="hide-mobile">2023.01.01</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="paging v2">
+                                    <ul>
+                                        <li class="front"><a href="javascript:void(0);"></a></li>
+                                        <li class="prev"><a href="javascript:void(0);"></a></li>
+                                        <li class="on"><a href="javascript:void(0);">1</a></li>
+                                        <li><a href="javascript:void(0);">2</a></li>
+                                        <li><a href="javascript:void(0);">3</a></li>
+                                        <li><a href="javascript:void(0);">4</a></li>
+                                        <li><a href="javascript:void(0);">5</a></li>
+                                        <li class="next"><a href="javascript:void(0);"></a></li>
+                                        <li class="back"><a href="javascript:void(0);"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="quick">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_portfolio.png">
+                        <p>포트<br class="hide-pc show-mobile">폴리오</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_guide.png">
+                        <p>제작<br class="hide-pc show-mobile">안내</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_inquiry.png">
+                        <p>견적<br class="hide-pc show-mobile">문의</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+						<button class="btn-ic btn-top">맨 위로</button>
+        <div class="container">
+            <div class="company01">
+                <ul>
+                    <li>
+                        <p class="title">ADRESS</p>
+                        <p class="text">
+                            울산광역시 중구 종가로 406-21,<br>
+                            혁신비즈니스센터 C동 7층 730호
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">TEL</p>
+                        <p class="text">
+                            010.5809.1443
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">E-MAIL</p>
+                        <p class="text">
+                            unipage@uni-page.com
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">QUICK</p>
+                        <p class="text">
+                            <a href="javascript:void(0);">포트폴리오</a>
+                            <a href="javascript:void(0);">온라인 문의</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="company02">
+                <p>
+                    <span>주소 : 울산광역시 중구 종가로 406-21, 혁신비즈니스센터 C동 7층 730호</span>
+                    <span>TEL : 010.5809.1443</span>
+                    <span>E-MAIL : unipage@uni-page.com</span></p>
+            </div>
+            <p class="copyright">COPYRIGHT(c) 2022 유니페이지 ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>

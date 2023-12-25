@@ -1,0 +1,623 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>유니페이지</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.6.3.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/sub.js"></script>
+</head>
+<body>
+    <!-- skip-nav -->
+    <div id="skip-nav">
+        <a href="#nav">메인메뉴 바로가기</a>
+        <a href="#content">본문내용 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="inner">
+            <div class="container">
+                <h1 class="logo"><a href="javascript:void(0);">유티페이지</a></h1>
+                <div class="gnb">
+                    <button class="btn-ic btn-close"></button>
+                    <div class="user">
+                        <ul>
+                            <li><a href="javascript:void(0);">로그인</a></li>
+                            <li><a href="javascript:void(0);">회원가입</a></li>
+                        </ul>
+                    </div>
+                    <div class="quick">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_inquiry.png">
+                                    <p>견적문의</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_portfolio.png">
+                                    <p>포트폴리오</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_guide.png">
+                                    <p>제작안내</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <img src="../img/icon/ic_faq.png">
+                                    <p>FAQ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="depth01">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">포트폴리오</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">포트폴리오</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">서비스</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">서비스</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">홈페이지</a></li>
+                                        <li><a href="javascript:void(0);">템플릿</a></li>
+                                        <li><a href="javascript:void(0);">수출바우처</a></li>
+                                        <li><a href="javascript:void(0);">유지보수/호스팅</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">제작/주문</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">제작/주문</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">템플릿 제작</a></li>
+                                        <li><a href="javascript:void(0);">간편 제작</a></li>
+                                        <li><a href="javascript:void(0);">고급 제작</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">고객센터</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">고객센터</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">공지사항</a></li>
+                                        <li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+                                        <li><a href="javascript:void(0);">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">회사소개</a>
+                                <div class="depth02">
+                                    <p class="tit-depth">회사소개</p>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">회사소개</a></li>
+                                        <li><a href="javascript:void(0);">찾아오시는 길</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-area">
+                        <a href="javascript:void(0)" class="guide-video">
+                            <p class="text01">제작 동영상 가이드</p>
+                            <p class="text02">
+                                복잡한 제작방법 동영상 가이드로 <br>
+                                쉽게 확인하고 결정해 보세요 :)
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="util">
+                    <ul>
+                        <li><button class="btn sm rnd fill-red">견적문의</button></li>
+                        <li><button class="btn-ic btn-mypage"></button></li>
+                        <li><button class="btn-ic btn-cart"></button></li>
+                        <li><button class="btn-ic btn-menu"></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content" class="sub">
+        <div class="container">
+            <div class="sub-title">
+                <p class="tit01">SERVICE</p>
+                <p class="tit02">HOMPAGE</p>
+                <p class="txt">
+                    전문가들과 함께하는 홈페이지 제작.<br>
+                    고객 맞춤형, 차별화된 홈페이지 디자인으로 브랜드의 가치를 높이세요.
+                </p>
+            </div>
+        </div>
+            <div class="service">
+                <div class="container">
+                    <div class="btn-wrap center">
+                        <button class="btn lg rnd line-red"><strong>간편/맞춤 제작</strong> 이란?</button>
+                        <button class="btn lg rnd fill-red"><strong>견적 문의</strong>하기</button>
+                    </div>
+                    <div class="service-swiper ">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="../img/temp/@temp_service01.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="../img/temp/@temp_service01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button-next"></button>
+                        <button class="swiper-button-prev"></button>
+                    </div>
+                </div>
+                <div class="merit-area">
+                    <div class="container">
+                        <ul>
+                            <li>
+                                <img src="../img/sub/img_homepage_merit01.png" alt="">
+                                <p class="title">다양한 제작 경험</p>
+                                <p class="text">
+                                    다양한 업종의 제작 경험으로 <br class="hide-mobile">
+                                    고객 니즈에 맞는 홈페이지를 제공합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="../img/sub/img_homepage_merit02.png" alt="">
+                                <p class="title">다양한 제작 방식</p>
+                                <p class="text">
+                                    간편 제작부터 맞춤 제작까지 <br class="hide-mobile">
+                                    원하는 제작 방식을 선택해 보세요
+                                </p>
+                            </li>
+                            <li>
+                                <img src="../img/sub/img_homepage_merit03.png" alt="">
+                                <p class="title">고객 맞춤 제작</p>
+                                <p class="text">
+                                    전문가와의 꼼꼼한 상담을 통해 <br class="hide-mobile">
+                                    고객 맞춤 홈페이지를 제작합니다.
+                                </p>
+                            </li>
+                            <li>
+                                <img src="../img/sub/img_homepage_merit04.png" alt="">
+                                <p class="title">최적의 제작 비용</p>
+                                <p class="text">
+                                    최적의 비용으로 <br class="hide-mobile">
+                                    최고의 홈페이지를 제작합니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="homepage-portfolio">
+                    <div class="container">
+                        <div class="headline">
+                            <p class="title01 txt-red">포트폴리오</p>
+                            <p class="title02">유니페이지가 제작한 <br class="hide-pc show-mobile">대표 프로젝트</p>
+                        </div>
+                        <div class="gallery-wrap v2">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_01.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">SGR 테크</p>
+                                            <div class="category">
+                                                <p>기업</p>
+                                                <p>맞춤제작</p>
+                                                <p>다국어</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_02.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">누리친환경그룹</p>
+                                            <div class="category">
+                                                <p>기업</p>
+                                                <p>간편제작</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_03.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">리더쉽포유</p>
+                                            <div class="category">
+                                                <p>교육</p>
+                                                <p>맞춤제작</p>
+                                                <p>카탈로그</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_04.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">엠디호텔 (구 스타즈호텔)</p>
+                                            <div class="category">
+                                                <p>여행/숙박</p>
+                                                <p>맞춤제작</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_05.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">(주)상떼화장품</p>
+                                            <div class="category">
+                                                <p>뷰티/기업</p>
+                                                <p>템플릿</p>
+                                                <p>쇼핑몰</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_06.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">포니게임즈</p>
+                                            <div class="category">
+                                                <p>게임</p>
+                                                <p>맞춤제작</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_07.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">카츠모리 돈까스</p>
+                                            <div class="category">
+                                                <p>음식/프랜차이즈</p>
+                                                <p>간편제작</p>
+                                                <p>템플릿</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_08.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">KOS Ins.</p>
+                                            <div class="category">
+                                                <p>기업</p>
+                                                <p>맞춤제작</p>
+                                                <p>수출바우처</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <div class="img-area">
+                                            <img src="../img/temp/@temp_thumb02_09.png">
+                                        </div>
+                                        <div class="cont-area">
+                                            <p class="tit">나노텍</p>
+                                            <div class="category">
+                                                <p>기업</p>
+                                                <p>간편제작</p>
+                                                <p>템플릿</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap center"><button class="btn lg rnd fill-black">포트폴리오 더 보기</button></div>
+                    </div>
+                </div>
+                <div class="cost">
+                    <div class="container">
+                        <div class="headline">
+                            <p class="title01 txt-red">제작 비용</p>
+                            <p class="title02">
+                                최적의 비용으로 <br>
+                                완성도 높은 결과물을 제공합니다.
+                            </p>
+                        </div>
+                        <div class="cost-package red">
+                            <ul>
+                                <li>
+                                    <img src="../img/sub/img_homepage_cost01.png" alt="">
+                                    <p class="title">
+                                        템플릿 제작<br>
+                                        <strong>88만원 ~</strong>
+                                    </p>
+                                    <p class="text">
+                                        인기 디자인 템플릿을 이용하여 <br>
+                                        보다 저렴하고 빠르게 홈페이지 제작.
+                                    </p>
+                                    <button class="btn md rnd fill-red">템플릿 보러가기</button>
+                                </li>
+                                <li>
+                                    <img src="../img/sub/img_homepage_cost02.png" alt="">
+                                    <p class="title">
+                                        간편 제작<br>
+                                        <strong>120만원 ~</strong>
+                                    </p>
+                                    <p class="text">
+                                        템플릿 디자인을 내가 원하는 <br>
+                                        구성으로 조합하여 간편하게 제작.
+                                    </p>
+                                    <button class="btn md rnd fill-red">견적 문의</button>
+                                </li>
+                                <li class="best">
+                                    <img src="../img/sub/img_homepage_cost03.png" alt="">
+                                    <p class="title">
+                                        맞춤 제작<br>
+                                        <strong>250만원 ~</strong>
+                                    </p>
+                                    <p class="text">
+                                        전문가 상담을 통해 제작 구성을 <br>
+                                        추천받아 원하는 홈페이지로 맞춤 제작.
+                                    </p>
+                                    <button class="btn md rnd fill-red">견적 문의</button>
+                                </li>
+                                <li>
+                                    <img src="../img/sub/img_homepage_cost04.png" alt="">
+                                    <p class="title">
+                                        프리미엄 맞춤 제작<br>
+                                        <strong>상담 후 협의</strong>
+                                    </p>
+                                    <p class="text">
+                                        디자인, 개발 모두 고객 맞춤! 원하는 <br>
+                                        제작 구성을 모두 구현해 드리는 맞춤 제작.
+                                    </p>
+                                    <button class="btn md rnd fill-red">견적 문의</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="procedure">
+                    <div class="container">
+                        <div class="headline">
+                            <p class="title01">제작 절차</p>
+                            <p class="title02">
+                                자료수집부터 마무리까지 <br>
+                                체계적인 제작 순서를 <br class="hide-pc show-mobile">원칙으로 합니다.
+                            </p>
+                        </div>
+    
+                        <div class="procedure-step">
+                            <div class="bar">
+                                <p>준비</p>
+                                <p>제작</p>
+                                <p>마무리</p>
+                            </div>
+    
+                            <div class="step-area">
+                                <ul>
+                                    <li>
+                                        <p class="step">STEP 01</p>
+                                        <p class="title">상담 및 계약</p>
+                                        <ul>
+                                            <li>- 문의 내용 상담 진행</li>
+                                            <li>- 상담 내용 견적서 작성</li>
+                                            <li>- 견적 안내, 계약 진행</li>
+                                        </ul>
+                                        <p class="result">전화상담 / 방문상담 / 화상상담</p>
+                                    </li>
+                                    <li>
+                                        <p class="step">STEP 02</p>
+                                        <p class="title">자료 수집 <br class="hide-pc show-mobile">및 기획</p>
+                                        <ul>
+                                            <li>- 담당PM의 자료 요청</li>
+                                            <li>- 전달 자료 기반 기획</li>
+                                            <li>- 담당 디자이너 배정</li>
+                                        </ul>
+                                        <p class="result">참고사이트 / 도메인정보</p>
+                                    </li>
+                                    <li>
+                                        <p class="step">STEP 03</p>
+                                        <p class="title">디자인</p>
+                                        <ul>
+                                            <li>- 디자인 시안 제작</li>
+                                            <li>- 피드백 진행 (총 3회)</li>
+                                            <li>- 최종 컨펌 진행</li>
+                                        </ul>
+                                        <p class="result">메인 / 서브 / 개발 페이지 디자인</p>
+                                    </li>
+                                    <li>
+                                        <p class="step">STEP 04</p>
+                                        <p class="title">퍼블리싱<br class="hide-pc show-mobile">/개발</p>
+                                        <ul>
+                                            <li>- 컨펌 완료 디자인 구현</li>
+                                            <li>- 개발 기능 적용</li>
+                                            <li>- 내부 검수 진행</li>
+                                        </ul>
+                                        <p class="result">스크립트 효과 / 사용자 최적화</p>
+                                    </li>
+                                    <li>
+                                        <p class="step">STEP 05</p>
+                                        <p class="title">오픈</p>
+                                        <ul>
+                                            <li>- 최종 검수 진행</li>
+                                            <li>- 도메인 연결, 마무리 설정</li>
+                                            <li>- 홈페이지 오픈</li>
+                                        </ul>
+                                        <p class="result">도메인 연결 / SEO / 관리자 계정</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="worth">
+                    <div class="container">
+                        <div class="headline">
+                            <p class="title02">
+                                유니페이지는 <br class="hide-pc show-mobile"><span class="txt-red">브랜드의 가치</span>를 믿습니다.
+                            </p>
+                            <p class="text">
+                                여러 클라이언트 분들이 유니페이지와 함께했습니다. <br class="hide-mobile">
+                                우리가 가진 노하우를 넘어 원하고 지향하는 모든 것에 가치를 담아 <br class="hide-mobile">
+                                고객 여러분들의 성공을 함께하겠습니다.
+                            </p>
+                        </div>
+                        <div class="cient-area">
+                            <ul>
+                                <li><img src="../img/sub/img_service_client01.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client02.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client03.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client04.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client05.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client06.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client07.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client08.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client09.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client10.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client11.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client12.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client13.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client14.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client15.png" alt=""></li>
+                                <li><img src="../img/sub/img_service_client16.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrap center"><button class="btn xl rnd fill-red">견적 문의하기</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- // content -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="quick">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_portfolio.png">
+                        <p>포트<br class="hide-pc show-mobile">폴리오</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_guide.png">
+                        <p>제작<br class="hide-pc show-mobile">안내</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="../img/icon/ic_quick_inquiry.png">
+                        <p>견적<br class="hide-pc show-mobile">문의</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+						<button class="btn-ic btn-top">맨 위로</button>
+        <div class="container">
+            <div class="company01">
+                <ul>
+                    <li>
+                        <p class="title">ADRESS</p>
+                        <p class="text">
+                            울산광역시 중구 종가로 406-21,<br>
+                            혁신비즈니스센터 C동 7층 730호
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">TEL</p>
+                        <p class="text">
+                            010.5809.1443
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">E-MAIL</p>
+                        <p class="text">
+                            unipage@uni-page.com
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">QUICK</p>
+                        <p class="text">
+                            <a href="javascript:void(0);">포트폴리오</a>
+                            <a href="javascript:void(0);">온라인 문의</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="company02">
+                <p>
+                    <span>주소 : 울산광역시 중구 종가로 406-21, 혁신비즈니스센터 C동 7층 730호</span>
+                    <span>TEL : 010.5809.1443</span>
+                    <span>E-MAIL : unipage@uni-page.com</span></p>
+            </div>
+            <p class="copyright">COPYRIGHT(c) 2022 유니페이지 ALL RIGHTS RESERVED</p>
+        </div>
+    </div>
+    <!-- // footer -->
+</body>
+</html>

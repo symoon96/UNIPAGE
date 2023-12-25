@@ -14,7 +14,7 @@
     @header
 -------------------------------------------------------------------*/
 #header {min-height: 10rem;}
-#header .inner {position: fixed; width: 100vw; height: 10rem; background-color: #ffffff; z-index: 2; box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.07);}
+#header .inner {position: fixed; width: 100vw; height: 10rem; background-color: #ffffff; z-index: 11; box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.07);}
 #header .inner .container {display: flex; align-items: center;}
 #header.on {}
 
@@ -75,7 +75,7 @@
     @footer
 -------------------------------------------------------------------*/
 #footer {background-color: #2d2f2e; padding-top: 5.5rem; padding-bottom: 6.5rem;}
-#footer .quick {position: fixed; z-index: 1; right: 3rem; top: 21.5rem; background-color: #ffffff; width: 8rem; border-radius: 4rem; padding: 2.5rem 1rem; box-shadow: 0px 0px 1.5rem 0px rgba(0,0,0,0.07);}
+#footer .quick {position: fixed; z-index: 10; right: 3rem; top: 21.5rem; background-color: #ffffff; width: 8rem; border-radius: 4rem; padding: 2.5rem 1rem; box-shadow: 0px 0px 1.5rem 0px rgba(0,0,0,0.07);}
 #footer .quick ul {display: flex; flex-direction: column; gap: 3rem 0; align-items: center; }
 #footer .quick ul li a {display: block;}
 #footer .quick ul li img {width: 4rem; margin: 0 auto;}
@@ -112,7 +112,7 @@
 /*-------------------------------------------------------------------
     @content
 -------------------------------------------------------------------*/
-#content{}
+#content {overflow-x: hidden;}
 
 .container {margin-left: auto; margin-right: auto; position: relative; padding-left: 4rem; padding-right: 4rem; max-width: 148rem;}
 .container::after{ display: block; clear: both; content: ""; }
